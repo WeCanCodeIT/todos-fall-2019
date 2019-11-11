@@ -11,13 +11,6 @@ namespace todos.Controllers
     [ApiController]
     public class TodoController : ControllerBase
     {
-        //private static List<string> all = new List<string>()
-        //{
-        //    "Remodel Bathroom",
-        //    "Finish my laser app",
-        //    "Do things with kids"
-        //};
-
         private IRepository<Todo> todoRepo;
 
         public TodoController(IRepository<Todo> todoRepo)
@@ -30,6 +23,7 @@ namespace todos.Controllers
         public IEnumerable<Todo> Get()
         {
             return todoRepo.GetAll();
+            // return new List<Todo>();
         }
 
         // GET api/todos/5

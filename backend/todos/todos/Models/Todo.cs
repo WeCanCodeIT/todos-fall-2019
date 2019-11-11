@@ -10,15 +10,16 @@ namespace todos.Models
         public int Id { get; set; }
         public string Name { get; set; }
 
-        //public Todo(string name)
-        //{
-        //    Name = name;
-        //}
+        public Todo(int id, string name)
+        {
+            Id = id;
+            Name = name;
+        }
 
-        //public Todo()
-        //{
+        public Todo()
+        {
 
-        //}
+        }
 
     }
 }
